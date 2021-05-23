@@ -1,0 +1,51 @@
+﻿<Window x:Name="mainWindow" x:Class="NotePad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NotePad"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="CanMinimize" Icon="doge1.jpg">
+    <Grid>
+       
+        <Menu x:Name="menu" VerticalAlignment="Top" HorizontalAlignment="Left" IsMainMenu="False" KeyDown="menu_KeyDown" Width="152" FontSize="14">
+            <MenuItem Header="File">
+                <MenuItem.Icon>
+                    <Image Source="
+                C:\Users\rresh\Desktop\doge1.jpg"></Image>
+                </MenuItem.Icon>
+                <MenuItem Header="Create">
+                    <MenuItem x:Name="createButton" Header="Are you sure?" Click="createButton_Click"></MenuItem>
+                </MenuItem>
+                <MenuItem x:Name="newWindow" Header="New window" Click="newWindow_Click">
+
+                </MenuItem>
+                <Separator></Separator>
+                <MenuItem x:Name="open" Header="Open" Click="open_Click">
+
+                </MenuItem>
+                <MenuItem x:Name="save" Header="Save" Click="save_Click">
+
+                </MenuItem>
+                <MenuItem Header="Save as.." x:Name="saveAs" Click="saveAs_Click">
+
+                </MenuItem>
+                <Separator></Separator>
+
+                <MenuItem x:Name="exit" Header="Exit" Click="exit_Click" />
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem x:Name="printDate" Header="Date" Click="printDate_Click"></MenuItem>
+                <MenuItem x:Name="time" Header="Time" Click="printTime"></MenuItem>
+                <MenuItem x:Name="smile" Header="Smile" Click="smilePrint"></MenuItem>
+                <MenuItem Header="My phone number" Click="MenuItem_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="About" Width="49" >
+                <Label Content="By rreshrr" HorizontalAlignment="Left" Foreground="#FF255B15"></Label>
+            </MenuItem>
+        </Menu>
+        <TextBox x:Name="text" HorizontalAlignment="Left" Height="395" Margin="0,24,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="792" KeyDown="text_KeyDown" FontSize="14"/>
+
+
+    </Grid>
+</Window>
